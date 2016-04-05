@@ -4,3 +4,5 @@ This image contains the base CentOS 6 image plus package updates and installing 
 
 This package is inspired by the docker setup provided by Magento [here](https://github.com/magento/magento2-docker).  I just took split up 
 each process to be in its own container per Docker best practices
+
+See example-use directory for an example of how to run these images
