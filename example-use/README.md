@@ -3,8 +3,8 @@
 ## Setup
 
 ### Prerequisites
-* If running on OSX or Windows, you need either VirtualBox, VMware, or another VM solution (check out https://github.com/nlf/dlite if running on OSX)
-* Docker & Docker Compose
+* If running on OSX or Windows, you need either [VirtualBox](https://www.virtualbox.org/), VMware [Fusion](https://www.vmware.com/products/fusion) / [Workstation](https://www.vmware.com/products/workstation), or another VM solution (check out [dlite](https://github.com/nlf/dlite) if running on OSX)
+* [Docker](https://www.docker.com/) & [Docker Compose](https://www.docker.com/products/docker-compose)
 
 ### Data directory
 The data directory will contain the contents of /var/lib/mysql from the DB container.
