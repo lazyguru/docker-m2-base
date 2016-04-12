@@ -1,10 +1,12 @@
 # Example project directory
 
-## Prerequisites
+## Setup
+
+### Prerequisites
 * If running on OSX or Windows, you need either VirtualBox, VMware, or another VM solution (check out https://github.com/nlf/dlite if running on OSX)
 * Docker & Docker Compose
 
-## More Info
+### Data directory
 The data directory will contain the contents of /var/lib/mysql from the DB container.
 This is so that the database is persisted between docker runs (yes you could do a 
 data volume for this instead, but I sometimes get a bit punch with ```docker rm```
@@ -13,9 +15,15 @@ You may get permissions issues on the host with this directory.  Since you reall
 shouldn't care about the contents of this directory on the host and only need the
 docker instances to access it this can be ignored.
 
+### Magento directory
 Install Magento2 into the magento sub-directory.  This directory will be exposed
 to the nginx and php containers as a volume.  You can make changes to files in
 this directory and the containers will see them instantly
+
+### Nginx directory
+The nginx directory is used for loading site definitions.  An example is provided
+for you here.  You can run using this config without modification.  It is derived
+from the sample provided by Magento
 
 ## Running
 * Copy docker-compose.yml to your project directory (should contain an empty data subdirectory and a magento directory containing your Magento source)
