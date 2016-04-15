@@ -22,5 +22,5 @@ this directory and the containers will see them instantly
 
 ## Running
 * Copy docker-compose.yml to your project directory (should contain an empty data subdirectory and a magento directory containing your Magento source)
-* Run ```docker-compose up -d``` from this directory to launch all instances. If you need to access the DB from the command line, make sure to add a host file entry for the host "php" pointed to your docker VM instance (not sure how that would work on Linux, I'm a Mac guy)
+* Run ```docker-compose up -d``` from this directory to launch all instances. If you need to access the DB from the command line, make sure to add a host file entry for the host "db" pointed to your docker VM instance (not sure how that would work on Linux, I'm a Mac guy)
 
