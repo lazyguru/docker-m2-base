@@ -20,11 +20,6 @@ Install Magento2 into the magento sub-directory.  This directory will be exposed
 to the nginx and php containers as a volume.  You can make changes to files in
 this directory and the containers will see them instantly
 
-### Nginx directory
-The nginx directory is used for loading site definitions.  An example is provided
-for you here.  You can run using this config without modification.  It is derived
-from the sample provided by Magento
-
 ## Running
 * Copy docker-compose.yml to your project directory (should contain an empty data subdirectory and a magento directory containing your Magento source)
 * Run ```docker-compose up -d``` from this directory to launch all instances. If you need to access the DB from the command line, make sure to add a host file entry for the host "php" pointed to your docker VM instance (not sure how that would work on Linux, I'm a Mac guy)
